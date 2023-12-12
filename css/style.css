@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@400;500;700;800;900&family=Pacifico&display=swap');
+/* Load lokal font */
+@font-face {
+    font-family: HelveticaNeue-Thin;
+    src: local('HelveticaNeue-Thin.otf'), url('HelveticaNeue-Thin.otf') format('opentype');
+
+}
+
+/* Helper classes */
+body {
+    font-family: 'montserrat', sans-serif ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 0;
+}
+
+/* Hero start */
+#hero {
+    background-image: linear-gradient(rgba(206, 65, 50, 0.6), rgba(218, 88, 83, 0.6)), url(../project-images/hero-bc-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+} 
+
+/* nav start */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav li {
+    padding: 0 1px;
+}
+
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+#hero h2 {
+    color: #fff;
+}
+
+#hero p {
+    color: #fff;
+}
+
+/* menu icon */
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 30px;
+    background-color: #0000007d;
+}
+.hamburger {
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    display: none;
+    z-index: 999;
+}
+.hamburger .bar1, .hamburger .bar2, .hamburger .bar3 {
+    background-color: #fff;
+    height: 4px;
+    width: 36px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.animateBar1 {
+    animation: flipBar1 .5s;
+    animation-fill-mode: forwards;
+}
+
+.animateBar2 {
+    animation: fadeBar2 .5s;
+    animation-fill-mode: forwards;
+}
+
+.animateBar3 {
+    animation: flipBar3 .5s;
+    animation-fill-mode: forwards;
+}
+/* Mobile Nav start */
+
+.mobilenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000007d;
+    width: 170px;
+    height: 100vh;
+    padding: 16px 0;
+    position: fixed;
+    top: 0;
+    right: -170px;
+    transition: transform 0.5s;
+}
+
+.openDarwer {
+    transform: translate(-170px);
+}
+
+.mobilenav li {
+    padding: 10px 1px;
+    list-style: none;
+}
+
+.mobilenav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+/* Mobile Nav end */
+
+/* Keyframes for mane start */
+@keyframes flipBar1 {
+    form {
+       transform: rotate(0);
+    }
+    to {
+       transform: rotate(45deg) translate(4px, 6px);
+    }
+}
+
+@keyframes fadeBar2 {
+    form {
+       transform: scale(1);
+    }
+    to {
+       transform: scale(0);
+    }
+}
+
+@keyframes flipBar3 {
+    form {
+       transform: rotate(0);
+    }
+    to {
+       transform: rotate(-45deg) translate(4px, -6px);
+    }
+}
+
+/* cta area */
+.cta {
+    margin-top: 8rem;
+}
+
+.cta p {
+    width: 70%;
+    margin-top: 1.5rem;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    /* word-spacing: 10px; */
+}
+
+.cta a {
+    border-radius: 999px;
+}
+
+.phone img {
+    width: 400px;
+}
+/* Features section start */
+.main-features {
+    padding: 3rem;
+}
+
+.main-features h1 {
+   font-weight: 700;
+   opacity: .5;
+   padding-bottom: 20px;
+}
+
+.main-features .app p {
+    /* width: 70%; */
+    padding: 0 11rem;
+    padding-bottom: 3.5rem;
+}
+
+.main-features .features-img h3 {
+    font-weight: 500;
+    padding: 1.5rem 0;
+}
+
+.main-features .features-img p {
+    padding: 0 2rem;
+    padding-bottom: 3rem;
+}
+/* Features section end */
+/* Chocolate section start */
+.main-chocolate {
+    background-image: url(../project-images/man-img-bc.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 8.3rem;
+    padding-left: 12rem;
+}
+
+.main-chocolate p {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 0 !important;
+}
+
+.main-chocolate .p-1 {
+    color: #f55150;
+}
+
+.main-chocolate .p-2 {
+    color: #fff;
+}
+
+.main-chocolate .choco-para-2 p {
+    font-size: 15px;
+    width: 30%;
+    text-transform: capitalize;
+    padding: 2rem 0 !important;
+}
+
+.main-chocolate a {
+    background-color: #f55150;
+    color: #fff;
+    border-radius: 999px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.main-chocolate a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Chocolate section end */
+/* Footer */
+.main-footer {
+    background-color: #2e2e38;
+    color: #fff;
+    padding: 5rem 0;
+}
+
+.main-footer .posts {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.main-footer h4 {
+    font-size: 20px;
+}
+
+/* First-col start */
+.main-footer .posts .posts-contant p {
+    font-size: .7rem;
+    margin-left: 10px;
+}
+/* First-col end */
+/* Second-col start */
+.main-footer .para-1 p {
+    font-size: 10px;
+    padding-bottom: 15px;
+}
+
+.main-footer .para-2 p {
+    font-size: 15px;
+    padding-bottom: 15px;
+    width: 70%;
+}
+
+.main-footer .para-2 a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+/* Second-col end */
+/* Tird-col strat */
+.main-footer .para-3 p {
+    font-size: 15px;
+    width: 90%;
+}
+/* Tird-col end */
+/* Copyright section start */
+.main-copy {
+    background-color: #d7dedc;
+}
+
+.main-copy p {
+    display: inline-block;
+    font-weight: 500;
+}
+
+.main-copy .icon {
+    display: inline-block;
+}
+
+.main-copy i {
+    font-size: 25px;
+    padding: 0 15px;
+}
+
+.main-copy .icon-1 {
+    color: #4762a1;
+}
+
+.main-copy .icon-2 {
+    color: #df3f82;
+}
+
+.main-copy .icon-3 {
+    color: #59d0d4;
+}
+/* Copyright section end */
+
+@media only screen and (max-width: 991px) {
+    .navbar {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+
+.purple {
+    background-color: purple;
+    padding: 20px;
+}

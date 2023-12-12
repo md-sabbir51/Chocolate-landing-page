@@ -1,0 +1,47 @@
+/* Hero start */
+#hero {
+    height: 130vh;
+}
+
+#hero h2 {
+    font-size: 25px;
+}
+
+#hero p {
+    font-size: 15px;
+    width: 40%;
+}
+
+.cta a {
+    font-size: 10px;
+}
+
+.cta .phone img {
+    display: none;
+}
+
+/* Hero end */
+/* Features start */
+.main-features .app p {
+    padding: 0;
+    margin-bottom: 3rem;
+}
+/* Features end */
+/* Chocolate start */
+.main-chocolate {
+    height: 110vh;
+    padding-left: 0;
+    background-size: cover;
+}
+
+.main-chocolate p {
+    font-size: 20px;
+    /* font-weight: 500; */
+    /* padding: 0 !important; */
+}
+
+.main-chocolate .choco-para-2 p {
+    font-size: 15px;
+    width: 45%;
+    /* padding: 2rem 0 !important; */
+}
